@@ -17,7 +17,7 @@
             {% if prediction_text  %}
                 <div class="alert alert-danger alert-dismissible fade show" role="alert">
                     {{ prediction_text  }} lakhs.
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    <button onclick="myFunction()"  type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
             {% else %}
                 
@@ -115,3 +115,8 @@
 </body>
 
 </html>
+<script>
+    function myFunction() {
+        window.location.href="/";
+    }
+</script>
